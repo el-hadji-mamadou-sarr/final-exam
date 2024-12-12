@@ -3,125 +3,124 @@
 
 ## Description
 
-FinalExamApp is an Android application designed to demonstrate the integration of various Android features including Room Database, RecyclerView, LiveData, WorkManager, SharedPreferences, and notifications. The app showcases how to handle data storage, retrieval, and display efficiently using modern Android development practices.
+FinalExamApp est une application Android conçue pour démontrer l'intégration de plusieurs fonctionnalités Android modernes, notamment Room Database, RecyclerView, LiveData, WorkManager, SharedPreferences, et les notifications. L'application met en avant la gestion efficace du stockage, de la récupération et de l'affichage des données en utilisant les meilleures pratiques de développement Android.
 
 ---
 
 ## Démonstration
-https://github.com/user-attachments/assets/e746a8ae-c3eb-403e-8e7a-5fd834b1bb1f
 
-## Features
-
-1. **Room Database**
-
-    - Stores user information persistently.
-    - Flushes the database at each app launch for a clean slate.
-    - Uses LiveData to observe changes and automatically update the UI.
-
-2. **RecyclerView**
-
-    - Displays two lists of items in a scrollable format.
-    - Dynamically updates with data changes.
-
-3. **SharedPreferences**
-
-    - Stores and retrieves lightweight user preferences.
-
-4. **WorkManager**
-
-    - Schedules background tasks such as notifications.
-
-
-
-
-
-5. **CustomView**
-
-    - Demonstrates creating and rendering custom views in Android.
-
-6. **Notifications**
-
-    - Sends notifications to engage the user with important messages.
-
-7. **Localization**
-
-    - Supports localized strings for a better user experience in multiple languages.
+[Vidéo de démonstration](https://github.com/user-attachments/assets/e746a8ae-c3eb-403e-8e7a-5fd834b1bb1f)
 
 ---
 
-## Project Structure
+## Fonctionnalités
+
+1. **Base de données Room**
+
+    - Stocke les informations utilisateur de manière persistante.
+    - Réinitialise la base de données à chaque lancement de l'application pour repartir à zéro.
+    - Utilise LiveData pour observer les changements et mettre à jour l'interface utilisateur automatiquement.
+
+2. **RecyclerView**
+
+    - Affiche deux listes d'éléments sous forme défilante.
+    - Met à jour dynamiquement les données.
+
+3. **SharedPreferences**
+
+    - Stocke et récupère les préférences utilisateur légères.
+
+4. **WorkManager**
+
+    - Planifie des tâches en arrière-plan comme l'envoi de notifications.
+
+5. **CustomView**
+
+    - Illustre la création et le rendu de vues personnalisées dans Android.
+
+6. **Notifications**
+
+    - Envoie des notifications pour engager l'utilisateur avec des messages importants.
+
+7. **Localisation**
+
+    - Supporte les chaînes localisées pour offrir une meilleure expérience utilisateur dans plusieurs langues.
+
+---
+
+## Structure du projet
 
 ### **Packages**
 
 - `com.example.final_exam_app`
-    - **Activities**: Contains `MainActivity` for the app's primary functionality.
-    - **Database**:
-        - `User`: Entity representing the user table.
-        - `UserDao`: Data Access Object for interacting with the database.
-        - `AppDatabase`: Room database implementation.
-    - **Adapters**:
-        - `MyAdapter`: Adapter for the first RecyclerView.
-        - `UserAdapter`: Adapter for the second RecyclerView displaying user data.
-    - **Workers**:
-        - `MyWorker`: Background task managed by WorkManager.
-    - **Views**:
-        - `CustomView`: Custom view for UI enhancement.
+    - **Activities** : Contient `MainActivity`, la principale activité de l'application.
+    - **Database** :
+        - `User` : Entité représentant la table utilisateur.
+        - `UserDao` : Objet d'accès aux données pour interagir avec la base.
+        - `AppDatabase` : Implémentation de la base de données Room.
+    - **Adapters** :
+        - `MyAdapter` : Adaptateur pour le premier RecyclerView.
+        - `UserAdapter` : Adaptateur pour le deuxième RecyclerView affichant les données utilisateur.
+    - **Workers** :
+        - `MyWorker` : Tâche en arrière-plan gérée par WorkManager.
+    - **Views** :
+        - `CustomView` : Vue personnalisée pour améliorer l'interface utilisateur.
 
 ---
 
 ## Installation
 
-1. Clone the repository:
+1. Clonez le dépôt :
 
    ```bash
-   git clone https://github.com/your-repository/final-exam-app.git
+   git clone https://github.com/el-hadji-mamadou-sarr/final-exam.git
    ```
 
-2. Open the project in Android Studio.
+2. Ouvrez le projet dans Android Studio.
 
-3. Sync the Gradle files to ensure all dependencies are resolved.
+3. Synchronisez les fichiers Gradle pour résoudre toutes les dépendances.
 
-4. Build and run the project on an emulator or a physical device.
-
----
-
-## Usage
-
-1. **Welcome Message**:
-
-    - Displays a localized welcome message on app launch.
-
-2. **Database Operations**:
-
-    - Flushes the database at the start.
-    - Automatically adds two users (John Doe and Jane Smith) to the database.
-
-3. **RecyclerView**:
-
-    - Displays a list of static items in the first RecyclerView.
-    - Dynamically updates user data in the second RecyclerView.
-
-4. **SharedPreferences**:
-
-    - Displays user preferences stored in SharedPreferences.
-
-5. **CustomView**:
-
-    - Renders a cyan background with a custom message.
-
-6. **WorkManager**:
-
-    - Schedules background tasks for notifications.
-
-7. **Notifications**:
-
-    - Sends a notification with predefined content upon app launch.
+4. Construisez et exécutez le projet sur un émulateur ou un appareil physique.
 
 ---
 
-## Code Highlights
+## Utilisation
 
-### **Room Database Initialization**
+1. **Message de bienvenue** :
+
+    - Affiche un message de bienvenue localisé au lancement de l'application.
+
+2. **Opérations de base de données** :
+
+    - Réinitialise la base de données au démarrage.
+    - Ajoute automatiquement deux utilisateurs (John Doe et Jane Smith) dans la base.
+
+3. **RecyclerView** :
+
+    - Affiche une liste statique dans le premier RecyclerView.
+    - Met à jour dynamiquement les données utilisateur dans le deuxième RecyclerView.
+
+4. **SharedPreferences** :
+
+    - Affiche les préférences utilisateur stockées dans SharedPreferences.
+
+5. **CustomView** :
+
+    - Rend un fond cyan avec un message personnalisé.
+
+6. **WorkManager** :
+
+    - Planifie des tâches en arrière-plan pour des notifications.
+
+7. **Notifications** :
+
+    - Envoie une notification avec un contenu prédéfini au lancement de l'application.
+
+---
+
+## Points forts du code
+
+### **Initialisation de la base de données Room**
 
 ```kotlin
 val db = Room.databaseBuilder(
@@ -131,7 +130,7 @@ val db = Room.databaseBuilder(
 val userDao = db.userDao()
 ```
 
-### **Flush Database**
+### **Réinitialisation de la base de données**
 
 ```kotlin
 lifecycleScope.launch(Dispatchers.IO) {
@@ -139,7 +138,7 @@ lifecycleScope.launch(Dispatchers.IO) {
 }
 ```
 
-### **LiveData Observation**
+### **Observation avec LiveData**
 
 ```kotlin
 userDao.getAll().observe(this) { users ->
@@ -147,7 +146,7 @@ userDao.getAll().observe(this) { users ->
 }
 ```
 
-### **RecyclerView Setup**
+### **Configuration d'un RecyclerView**
 
 ```kotlin
 val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
@@ -155,7 +154,7 @@ recyclerView.layoutManager = LinearLayoutManager(this)
 recyclerView.adapter = MyAdapter()
 ```
 
-### **SharedPreferences Example**
+### **Exemple de SharedPreferences**
 
 ```kotlin
 val sharedPreferences = getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
@@ -166,30 +165,29 @@ editor.apply()
 
 ---
 
-## Dependencies
+## Dépendances
 
-- **Room Database**: `androidx.room:room-runtime:2.x.x`
-- **RecyclerView**: `androidx.recyclerview:recyclerview:1.x.x`
-- **LiveData**: `androidx.lifecycle:lifecycle-livedata-ktx:2.x.x`
-- **WorkManager**: `androidx.work:work-runtime-ktx:2.x.x`
-
----
-
-## Future Enhancements
-
-- Add more user management features (e.g., edit and delete users).
-- Enhance the UI with animations and material design principles.
-- Implement network operations to fetch user data from a remote API.
+- **Room Database** : `androidx.room:room-runtime:2.x.x`
+- **RecyclerView** : `androidx.recyclerview:recyclerview:1.x.x`
+- **LiveData** : `androidx.lifecycle:lifecycle-livedata-ktx:2.x.x`
+- **WorkManager** : `androidx.work:work-runtime-ktx:2.x.x`
 
 ---
 
-## License
+## Améliorations futures
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+- Ajouter des fonctionnalités de gestion utilisateur (par exemple, modification et suppression).
+- Améliorer l'interface utilisateur avec des animations et les principes du design Material.
+- Implémenter des opérations réseau pour récupérer les données utilisateur depuis une API distante.
 
 ---
 
-## Acknowledgments
+## Licence
 
-- [Android Developers Documentation](https://developer.android.com/)
-- Open-source libraries used in the project.
+Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus de détails.
+
+---
+
+## Contributeur
+
+- [El Hadji Mamadou Sarr](https://github.com/el-hadji-mamadou-sarr)
